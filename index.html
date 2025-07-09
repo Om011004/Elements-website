@@ -3,26 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elements</title>
-
+  <title>Elements - Home</title>
   <style>
     @font-face {
       font-family: 'NotoSerifSemiCondensed';
       src: url('NotoSerif_SemiCondensed-Regular.ttf') format('truetype');
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
     body {
+      margin: 0;
       font-family: 'NotoSerifSemiCondensed', serif;
       background-color: #f5f5dc;
       color: #000;
-      line-height: 1.6;
     }
 
     header {
@@ -30,7 +22,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background: #f5f5dc;
+      background-color: #f5f5dc;
       border-bottom: 1px solid #ccc;
       flex-wrap: wrap;
     }
@@ -60,75 +52,42 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #eee;
-      padding: 10px 0;
+      background-color: #f5f5dc;
+      padding: 12px 0;
       border-bottom: 1px solid #ccc;
     }
 
     nav a {
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       color: #000;
       font-weight: bold;
       position: relative;
     }
 
-    nav a::after {
+    nav a:hover::after {
       content: "";
       display: block;
-      width: 0;
       height: 2px;
       background: #000;
-      transition: width 0.3s;
-    }
-
-    nav a:hover::after {
       width: 100%;
+      margin-top: 4px;
     }
 
     .section {
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
-    }
-
-    #about {
-      min-height: 80vh;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
 
-    #about h1 {
+    h1 {
       font-size: 2.2rem;
       margin-bottom: 20px;
     }
 
-    #about p {
+    p {
       font-size: 1.2rem;
-    }
-
-    #products {
-      padding-top: 80px;
-    }
-
-    .product-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .product {
-      width: 200px;
-      height: 150px;
-      background: #e0e0e0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      border: 1px solid #ccc;
     }
 
     footer {
@@ -144,16 +103,12 @@
         font-size: 20px;
       }
 
-      #about h1 {
+      h1 {
         font-size: 1.8rem;
       }
 
-      #about p {
+      p {
         font-size: 1rem;
-      }
-
-      .product {
-        width: 100%;
       }
 
       .header-contact {
@@ -180,7 +135,6 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <div class="header-left">
       <img src="transparent_logo.png" alt="Logo" class="logo">
@@ -192,14 +146,12 @@
     </div>
   </header>
 
-  <!-- Navigation Bar -->
   <nav>
-    <a href="#about">HOME</a>
-    <a href="#products">PRODUCTS</a>
+    <a href="index.html">HOME</a>
+    <a href="products.html">PRODUCTS</a>
   </nav>
 
-  <!-- About Us Section (Home) -->
-  <section id="about" class="section">
+  <section class="section">
     <h1>About Us</h1>
     <p>
       At Elements, we blend innovation with purposeful design to transform the way businesses present their products.
@@ -208,21 +160,11 @@
     </p>
   </section>
 
-  <!-- Products Section -->
-  <section id="products" class="section">
-    <h2 style="text-align:center;">Our Products</h2>
-    <div class="product-gallery">
-      <div class="product">Product 1</div>
-      <div class="product">Product 2</div>
-      <div class="product">Product 3</div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
     Contact us at: om@displaystand.in | +91 7738245330
   </footer>
 
 </body>
 </html>
+
 
