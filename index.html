@@ -28,10 +28,12 @@
 
     header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 20px;
+      padding: 20px 40px;
       background: #f5f5dc;
       border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
     }
 
     .logo {
@@ -40,9 +42,20 @@
       margin-right: 10px;
     }
 
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
     .company-name {
       font-size: 24px;
       font-weight: bold;
+    }
+
+    .header-contact {
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.4;
     }
 
     .section {
@@ -112,14 +125,31 @@
       .product {
         width: 100%;
       }
+
+      .header-contact {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="transparent_logo.png" alt="Logo" class="logo">
-    <div class="company-name">Elements</div>
+    <div class="header-left">
+      <img src="transparent_logo.png" alt="Logo" class="logo">
+      <div class="company-name">Elements</div>
+    </div>
+    <div class="header-contact">
+      om@displaystand.in<br>
+      +91 7738245330
+    </div>
   </header>
 
   <section id="about" class="section">
@@ -147,5 +177,3 @@
 
 </body>
 </html>
-
-
