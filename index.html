@@ -5,40 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Elements</title>
 
-  <!-- Custom Font: Noto Serif SemiCondensed -->
+  <!-- Font -->
   <style>
     @font-face {
       font-family: 'NotoSerifSemiCondensed';
       src: url('NotoSerif_SemiCondensed-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'NotoSerifSemiCondensed', serif;
-      background-color: #f5f5dc; /* beige */
+      background-color: #f5f5dc;
       color: #000;
+      line-height: 1.6;
     }
 
     header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
+      padding: 20px;
+      background: #f5f5dc;
       border-bottom: 1px solid #ccc;
     }
 
-    .logo-section {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo-placeholder {
-      width: 40px;
+    .logo {
       height: 40px;
-      background-color: #ddd;
+      width: 40px;
       margin-right: 10px;
     }
 
@@ -47,32 +45,44 @@
       font-weight: bold;
     }
 
-    .contact-info {
-      font-size: 14px;
-    }
-
-    section {
-      padding: 40px;
-      max-width: 1000px;
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
       margin: auto;
     }
 
-    .section-title {
-      font-size: 20px;
-      font-weight: bold;
+    #about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 80vh;
+      text-align: center;
+    }
+
+    #about h1 {
+      font-size: 2.2rem;
       margin-bottom: 20px;
+    }
+
+    #about p {
+      font-size: 1.2rem;
+    }
+
+    #products {
+      padding-top: 80px;
     }
 
     .product-gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
     }
 
     .product {
-      flex: 1 1 200px;
+      width: 200px;
       height: 150px;
-      background-color: #e0e0e0;
+      background: #e0e0e0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -80,34 +90,49 @@
     }
 
     footer {
-      padding: 20px 40px;
+      padding: 20px;
       text-align: center;
-      font-size: 14px;
       border-top: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .company-name {
+        font-size: 20px;
+      }
+
+      #about h1 {
+        font-size: 1.8rem;
+      }
+
+      #about p {
+        font-size: 1rem;
+      }
+
+      .product {
+        width: 100%;
+      }
     }
   </style>
 </head>
-
 <body>
 
   <header>
-    <div class="logo-section">
-      <div class="logo-placeholder"></div>
-      <div class="company-name">Elements</div>
-    </div>
-    <div class="contact-info">
-      <!-- Contact details placeholder -->
-      Your contact details here
-    </div>
+    <img src="transparent_logo.png" alt="Logo" class="logo">
+    <div class="company-name">Elements</div>
   </header>
 
-  <section id="about">
-    <div class="section-title">About Us</div>
-    <p><!-- About Us content will go here --></p>
+  <section id="about" class="section">
+    <h1>About Us</h1>
+    <p>
+      At Elements, we blend innovation with purposeful design to transform the way businesses present their products.
+      We specialize in a diverse range of digital display stands and custom-built physical display racks, crafted to
+      meet the evolving demands of modern retail, exhibitions, and commercial spaces.
+    </p>
   </section>
 
-  <section id="products">
-    <div class="section-title">Our Products</div>
+  <section id="products" class="section">
+    <h2 style="text-align:center;">Our Products</h2>
     <div class="product-gallery">
       <div class="product">Product 1</div>
       <div class="product">Product 2</div>
@@ -117,9 +142,10 @@
   </section>
 
   <footer>
-    <div>Contact us at: your@email.com | +91-XXXXXXXXXX</div>
+    Contact us at: om@displaystand.in | +91 7738245330
   </footer>
 
 </body>
 </html>
+
 
