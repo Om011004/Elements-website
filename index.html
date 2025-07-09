@@ -1,104 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elements</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5dc; /* Beige */
-            color: #000; /* Black text */
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            border-bottom: 1px solid #ccc;
-        }
-        .logo-section {
-            display: flex;
-            align-items: center;
-        }
-        .logo-placeholder {
-            width: 40px;
-            height: 40px;
-            background-color: #ddd;
-            margin-right: 10px;
-        }
-        .company-name {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .contact-info {
-            font-size: 14px;
-        }
-        section {
-            padding: 40px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .section-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .product-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .product {
-            flex: 1 1 200px;
-            height: 150px;
-            background-color: #e0e0e0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-        }
-        footer {
-            padding: 20px 40px;
-            text-align: center;
-            font-size: 14px;
-            border-top: 1px solid #ccc;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elements</title>
+
+  <!-- Custom Font: Noto Serif SemiCondensed -->
+  <style>
+    @font-face {
+      font-family: 'NotoSerifSemiCondensed';
+      src: url('NotoSerif_SemiCondensed-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'NotoSerifSemiCondensed', serif;
+      background-color: #f5f5dc; /* beige */
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-placeholder {
+      width: 40px;
+      height: 40px;
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+
+    .company-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .contact-info {
+      font-size: 14px;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product {
+      flex: 1 1 200px;
+      height: 150px;
+      background-color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo-section">
-            <div class="logo-placeholder"></div>
-            <div class="company-name">Elements</div>
-        </div>
-        <div class="contact-info">
-            <!-- Contact details placeholder -->
-            Your contact details here
-        </div>
-    </header>
+  <header>
+    <div class="logo-section">
+      <div class="logo-placeholder"></div>
+      <div class="company-name">Elements</div>
+    </div>
+    <div class="contact-info">
+      <!-- Contact details placeholder -->
+      Your contact details here
+    </div>
+  </header>
 
-    <section id="about">
-        <div class="section-title">About Us</div>
-        <p><!-- About Us content will go here --></p>
-    </section>
+  <section id="about">
+    <div class="section-title">About Us</div>
+    <p><!-- About Us content will go here --></p>
+  </section>
 
-    <section id="products">
-        <div class="section-title">Our Products</div>
-        <div class="product-gallery">
-            <div class="product">Product 1</div>
-            <div class="product">Product 2</div>
-            <div class="product">Product 3</div>
-            <div class="product">Product 4</div>
-        </div>
-    </section>
+  <section id="products">
+    <div class="section-title">Our Products</div>
+    <div class="product-gallery">
+      <div class="product">Product 1</div>
+      <div class="product">Product 2</div>
+      <div class="product">Product 3</div>
+      <div class="product">Product 4</div>
+    </div>
+  </section>
 
-    <footer>
-        <div>Contact us at: your@email.com | +91-XXXXXXXXXX</div>
-    </footer>
+  <footer>
+    <div>Contact us at: your@email.com | +91-XXXXXXXXXX</div>
+  </footer>
 
 </body>
 </html>
+
